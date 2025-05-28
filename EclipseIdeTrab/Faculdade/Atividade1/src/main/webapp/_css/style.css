@@ -1,0 +1,430 @@
+@charset "UTF-8";
+:root{
+    --color-primary:#0663A6;
+    --color-secundary:#9E8C6C; 
+    --color-tertiary: #F5F3F0;
+}
+
+header{
+    max-width: 100%;
+    height: auto;
+    background-color: var(--color-tertiary);
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 1024px;
+    height: auto;
+    padding: 120px 0 180px 0;
+
+}
+
+.imagem_perfil img{
+    align-items: center;
+    width: 358px;
+    height: 358px;
+    border-radius: 100%;
+}
+
+.primeira_impressao{
+    width: 1440px;
+    height: 224px;
+    margin-left: 116px;
+}
+
+.primeira_impressao h1{
+    font-weight: 100px;
+    font-size: 126px;
+    letter-spacing: -2.17px;
+    line-height: 112px;
+    margin-top: 0;
+}
+
+.primeira_impressao h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin-top: 51px;
+    color: var(--color-secundary);
+
+}
+.primeira_impressao a{
+    width: 224px;
+    height: 60px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 18px 62px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.skill , .awards , .carrer_traits{margin-bottom: 100px;}
+
+
+.bloco_esquerdo{
+    margin-top: 123px;
+    width: 350px;
+    height: 1559px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bloco_esquerdo h3{
+    color:#9E8C6C;
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+}
+
+.bloco_esquerdo p{
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0px;
+
+}
+
+.carrer_traits p{
+    line-height: 34px;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 20px;
+
+}
+
+
+.recent_works_card{
+    width: 308px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_works_card p{
+    color: var(--color-primary);
+}
+
+.recent_works_card a{
+    color: var(--color-secundary);
+    text-decoration: none;
+}
+
+
+.Experience{
+    padding-top: 44px;
+}
+
+.bloco_direito{
+    width: 635px;
+    height: auto;
+    margin-top: 123px;
+    margin-left: 138px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about_me {
+    margin-bottom: 72px;
+    width: 635px;
+    height: 326px;
+}
+
+
+.bloco_direito p{
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 34px;
+    
+}
+
+
+.bloquinho{
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+    width: 76px;
+    height: 10px;
+    margin-top: 80px;
+}
+
+.bloco_direito h2{
+    font-size: 36px;
+}
+
+.card{
+    width: 635px;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+.card p{
+    line-height: 32px; 
+}
+
+.text_experience{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text_experience h3{
+    color: var(--color-secundary);
+}
+
+.education h2{
+    margin-top: 70px;
+}
+
+.education_tips{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.education_tips h3{
+    color: var(--color-secundary);
+    
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    max-width: 100%;
+    height: 560px;
+    background-color: var(--color-tertiary);
+}
+
+.block_footer{
+    text-align: center;
+    width: 793px;
+    height: 258px;
+    margin: 0 auto;
+    padding-top: 158px;
+    padding-bottom: 116px;
+    
+}
+
+.block_footer a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.block_footer h2{
+    font-weight: 900px;
+    font-size: 66px;
+    line-height: 82px;
+    
+}
+
+.block_footer h3{
+    font-weight: 900px;
+    font-size: 36px;
+    line-height: 46px;
+    color: #0699A6;
+}
+
+.redes_sociais{
+    width: 244px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.block_footer h3{
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+        width: 100%;
+    }
+
+    .imagem_perfil {
+        margin: 80px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem_perfil img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .primeira_impressao {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 100px;
+        margin-left: 0;
+    }
+
+    .primeira_impressao h1 {
+        font-size: 80px;
+        line-height: 85px;
+        font-weight: 700;
+    }
+
+    .primeira_impressao h3 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .primeira_impressao a {
+        text-align: center;
+        display: inline-block;
+        width: auto;
+        height: auto;
+    
+    }
+
+    section {
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .bloco_esquerdo, .bloco_direito {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .bloco_esquerdo {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .bloco_direito {
+        margin-left: 0;
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .Experience {
+        margin-top: 60px;
+    }
+
+    .about_me {
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .text_experience, .education_tips {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .text_experience h3, .education_tips h3 {
+        margin-bottom: 10px;
+    }
+
+    .recent_works_card {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .bloco_esquerdo h3 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .bloco_esquerdo p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .bloco_direito h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .bloco_direito p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .carrer_traits p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .bloquinho {
+        width: 60px;
+        height: 8px;
+        margin-top: 40px;
+    }
+
+    footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .block_footer {
+        width: 100%;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .block_footer h2 {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 900;
+    }
+
+    .block_footer h3 {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 900;
+    }
+
+    .redes_sociais {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}

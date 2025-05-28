@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+    <title>Cadastro de Usuários</title>
+    <h:outputStylesheet library="_css" name="main.css" />
+</h:head>
+<h:body>
+    <div class="container">
+        <h1>Cadastro de Usuários</h1>
+        <h:form id="cadastroForm">
+            <div class="form-group">
+                <h:outputLabel for="nome" value="Nome:" />
+                <h:inputText id="nome" value="#{usuarioBean.nome}" styleClass="input-field" required="true" />
+            </div>
+            
+            <div class="form-actions">
+                <h:commandButton value="Cadastrar" action="#{usuarioBean.adicionarUsuario}" styleClass="submit-button" />
+            </div>
+        </h:form>
+        
+        <div class="usuarios-cadastrados">
+            <h2>Usuários Cadastrados</h2>
+            <h:dataTable value="#{usuarioBean.usuarios}" var="usuario" styleClass="usuarios-table" rendered="#{not empty usuarioBean.usuarios}">
+                <h:column>
+                    <h:outputText value="#{usuario}" />
+                </h:column>
+            </h:dataTable>
+            
+            <h:outputText value="Nenhum usuário cadastrado" styleClass="no-users" rendered="#{empty usuarioBean.usuarios}" />
+        </div>
+    </div>
+</h:body>
+</html>

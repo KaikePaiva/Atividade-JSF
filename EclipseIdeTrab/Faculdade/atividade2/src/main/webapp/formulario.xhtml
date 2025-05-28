@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Formulário de Contato</title>
+    <h:outputStylesheet library="_css" name="main.css" />
+</h:head>
+<h:body>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <h:form id="contactForm">
+            <div class="form-group">
+                <h:outputLabel for="nome" value="Nome:" />
+                <h:inputText id="nome" value="#{contactBean.nome}" styleClass="input-field" required="true" />
+            </div>
+            
+            <div class="form-group">
+                <h:outputLabel for="sobrenome" value="Sobrenome:" />
+                <h:inputText id="sobrenome" value="#{contactBean.sobrenome}" styleClass="input-field" required="true" />
+            </div>
+            
+            <div class="form-group">
+                <h:outputLabel for="fone" value="Telefone:" />
+                <h:inputText id="fone" value="#{contactBean.fone}" styleClass="input-field" required="true" />
+            </div>
+            
+            <div class="form-group">
+                <h:outputLabel for="email" value="Email:" />
+                <h:inputText id="email" value="#{contactBean.email}" styleClass="input-field" required="true" />
+            </div>
+            
+            <div class="form-group">
+                <h:outputLabel for="mensagem" value="Mensagem:" />
+                <h:inputTextarea id="mensagem" value="#{contactBean.mensagem}" styleClass="textarea-field" rows="5" />
+            </div>
+            
+            <div class="form-actions">
+                <h:commandButton value="Enviar" action="#{contactBean.enviarFormulario}" styleClass="submit-button" />
+                <h:commandButton value="Limpar" action="#{contactBean.limparFormulario}" styleClass="clear-button" immediate="true" />
+            </div>
+        </h:form>
+    </div>
+</h:body>
+</html>
